@@ -1,6 +1,11 @@
+aishell_datasets = {
+    "v2": {
+        "train": ["data/wav"]
+    },
+}
 librispeech_datasets = {
     "train": {
-        "clean": ["LibriSpeech/train-clean-100", "LibriSpeech/train-clean-360"],
+        "clean": ["LibriSpeech/train-clean-100"], # "LibriSpeech/train-clean-360"],
         "other": ["LibriSpeech/train-other-500"]
     },
     "test": {
