@@ -13,8 +13,7 @@ def sync(device: torch.device):
     
 
 def train(run_id: str, clean_data_root: Path, models_dir: Path, umap_every: int, save_every: int,
-          backup_every: int, vis_every: int, force_restart: bool, visdom_server: str,
-          no_visdom: bool):
+          backup_every: int, vis_every: int, force_restart: bool, visdom_server: str, no_visdom: bool):
     # Create a dataset and a dataloader
     dataset = SpeakerVerificationDataset(clean_data_root)
     loader = SpeakerVerificationDataLoader(
