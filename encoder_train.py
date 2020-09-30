@@ -20,7 +20,7 @@ if __name__ == "__main__":
     parser.add_argument("-m", "--models_dir", type=Path, default="encoder/saved_models/", help=\
         "Path to the output directory that will contain the saved model weights, as well as "
         "backups of those weights and plots generated during training.")
-    parser.add_argument("-v", "--vis_every", type=int, default=10, help= \
+    parser.add_argument("-v", "--vis_every", type=int, default=50, help= \
         "Number of steps between updates of the loss and the plots.")
     parser.add_argument("-u", "--umap_every", type=int, default=100, help= \
         "Number of steps between updates of the umap projection. Set to 0 to never update the "
